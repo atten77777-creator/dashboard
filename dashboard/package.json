@@ -1,0 +1,21 @@
+{
+  "name": "smartanalytics-pro",
+  "private": true,
+  "version": "0.0.1",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev:web": "npm run dev --workspace smartanalytics-web",
+    "dev:server": "npm run dev --workspace smartanalytics-server",
+    "dev": "npm run dev:web",
+    "build:web": "npm run build --workspace smartanalytics-web",
+    "build:server": "npm run build --workspace smartanalytics-server",
+    "start:server": "npm run start --workspace smartanalytics-server",
+    "preview:web": "npm run preview --workspace smartanalytics-web"
+  },
+  "devDependencies": {
+    "@types/better-sqlite3": "^7.6.8"
+  }
+}
